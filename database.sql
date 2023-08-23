@@ -6,3 +6,6 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS guesses
                 guess INTEGER,
                 correct INTEGER)''')
 conn.commit()
+
+# dont forget! 
+#pip install sqlite3
