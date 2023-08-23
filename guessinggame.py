@@ -1,16 +1,5 @@
-import sqlite3
+import sqlite3 # database file
 import random
-
-# Connect to the database
-conn = sqlite3.connect('guessing_game.db')
-cursor = conn.cursor()
-
-# Create a table to store guesses
-cursor.execute('''CREATE TABLE IF NOT EXISTS guesses
-                (id INTEGER PRIMARY KEY AUTOINCREMENT,
-                guess INTEGER,
-                correct INTEGER)''')
-conn.commit()
 
 # Generate a random number between 1 and 100
 target_number = random.randint(1, 100)
